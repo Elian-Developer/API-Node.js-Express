@@ -1,0 +1,40 @@
+
+POST http://localhost:3000/api/courses/math HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 4,
+    "title": "Learn geometry",
+    "topic": "geometry",
+    "views": 45214,
+    "level": "basic"
+}
+
+###
+
+PUT http://localhost:3000/api/courses/math/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "Learn Calculus Cero to Expert",
+    "topic": "calculus",
+    "views": 45214,
+    "level": "Advanced"
+}
+
+###
+
+PATCH http://localhost:3000/api/courses/math/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Learn Integral Calculus",
+    "topic": "integral"
+}
+
+###
+
+DELETE http://localhost:3000/api/courses/math/1 HTTP/1.1
+Content-Type: application/json
+

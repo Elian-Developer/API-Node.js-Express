@@ -1,0 +1,39 @@
+//Method Programming
+POST http://localhost:3000/api/courses/programming HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 4,
+    "title": "Lean Node.js",
+    "language": "javascript",
+    "views": "45214",
+    "level": "basic"
+}
+
+###
+
+PUT http://localhost:3000/api/courses/programming/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 2,
+    "title": "Python intermediate with projects",
+    "language": "python",
+    "views": "123996",
+    "level": "intermediate"
+}
+
+###
+
+PATCH http://localhost:3000/api/courses/programming/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Python intermediate with projects",
+    "views": 12456
+}
+
+###
+DELETE http://localhost:3000/api/courses/programming/1 HTTP/1.1
+
+
